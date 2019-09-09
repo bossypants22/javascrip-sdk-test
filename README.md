@@ -287,14 +287,14 @@ function getOrganizationApiRequests(input, callback)
         input['organizationId'] = 'organizationId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 173;
-        input['perPage'] = 173;
+        input['timespan'] = 111;
+        input['perPage'] = 111;
         input['startingAfter'] = 'startingAfter';
         input['endingBefore'] = 'endingBefore';
         input['adminId'] = 'adminId';
         input['path'] = 'path';
         input['method'] = 'method';
-        input['responseCode'] = 173;
+        input['responseCode'] = 111;
 
     controller.getOrganizationApiRequests(input, function(error, response, context) {
 
@@ -737,10 +737,10 @@ function getNetworkBluetoothClients(input, callback)
 
     var input = [];
         input['networkId'] = 'networkId';
-        input['perPage'] = 10;
+        input['perPage'] = 111;
         input['startingAfter'] = 'startingAfter';
         input['endingBefore'] = 'endingBefore';
-        input['timespan'] = 10;
+        input['timespan'] = 111;
         input['includeConnectivityHistory'] = false;
 
     controller.getNetworkBluetoothClients(input, function(error, response, context) {
@@ -778,7 +778,7 @@ function getNetworkBluetoothClient(input, callback)
         input['networkId'] = 'networkId';
         input['bluetoothClientId'] = 'bluetoothClientId';
         input['includeConnectivityHistory'] = false;
-        input['connectivityHistoryTimespan'] = 10;
+        input['connectivityHistoryTimespan'] = 111;
 
     controller.getNetworkBluetoothClient(input, function(error, response, context) {
 
@@ -907,7 +907,7 @@ function getDeviceClients(input, callback)
     var input = [];
         input['serial'] = 'serial';
         input['t0'] = 't0';
-        input['timespan'] = 10;
+        input['timespan'] = 111;
 
     controller.getDeviceClients(input, function(error, response, context) {
 
@@ -945,8 +945,8 @@ function getNetworkClients(input, callback)
     var input = [];
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
-        input['timespan'] = 10;
-        input['perPage'] = 10;
+        input['timespan'] = 111;
+        input['perPage'] = 111;
         input['startingAfter'] = 'startingAfter';
         input['endingBefore'] = 'endingBefore';
 
@@ -1051,7 +1051,7 @@ function getNetworkClientEvents(input, callback)
     var input = [];
         input['networkId'] = 'networkId';
         input['clientId'] = 'clientId';
-        input['perPage'] = 10;
+        input['perPage'] = 111;
         input['startingAfter'] = 'startingAfter';
         input['endingBefore'] = 'endingBefore';
 
@@ -1093,8 +1093,8 @@ function getNetworkClientLatencyHistory(input, callback)
         input['clientId'] = 'clientId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 10;
-        input['resolution'] = 10;
+        input['timespan'] = 111;
+        input['resolution'] = 111;
 
     controller.getNetworkClientLatencyHistory(input, function(error, response, context) {
 
@@ -1267,7 +1267,7 @@ function getNetworkClientTrafficHistory(input, callback)
     var input = [];
         input['networkId'] = 'networkId';
         input['clientId'] = 'clientId';
-        input['perPage'] = 10;
+        input['perPage'] = 111;
         input['startingAfter'] = 'startingAfter';
         input['endingBefore'] = 'endingBefore';
 
@@ -1707,7 +1707,7 @@ function getNetworkDeviceLldpCdp(input, callback)
     var input = [];
         input['networkId'] = 'networkId';
         input['serial'] = 'serial';
-        input['timespan'] = 10;
+        input['timespan'] = 203;
 
     controller.getNetworkDeviceLldpCdp(input, function(error, response, context) {
 
@@ -1750,8 +1750,8 @@ function getNetworkDeviceLossAndLatencyHistory(input, callback)
         input['ip'] = 'ip';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 10;
-        input['resolution'] = 10;
+        input['timespan'] = 203;
+        input['resolution'] = 203;
         input['uplink'] = 'uplink';
 
     controller.getNetworkDeviceLossAndLatencyHistory(input, function(error, response, context) {
@@ -1919,7 +1919,7 @@ function getOrganizationDevices(input, callback)
 
     var input = [];
         input['organizationId'] = 'organizationId';
-        input['perPage'] = 10;
+        input['perPage'] = 203;
         input['startingAfter'] = 'startingAfter';
         input['endingBefore'] = 'endingBefore';
 
@@ -2747,7 +2747,7 @@ function getDeviceCameraAnalyticsOverview(input, callback)
         input['serial'] = 'serial';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 10;
+        input['timespan'] = 203;
         input['objectType'] = Object.keys(objectType)[0];
 
     controller.getDeviceCameraAnalyticsOverview(input, function(error, response, context) {
@@ -2852,8 +2852,8 @@ function getDeviceCameraAnalyticsZoneHistory(input, callback)
         input['zoneId'] = 'zoneId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 10;
-        input['resolution'] = 10;
+        input['timespan'] = 203;
+        input['resolution'] = 203;
         input['objectType'] = Object.keys(objectType)[0];
 
     controller.getDeviceCameraAnalyticsZoneHistory(input, function(error, response, context) {
@@ -3911,7 +3911,7 @@ function getNetworkSmTargetGroups(input, callback)
 
     var input = [];
         input['networkId'] = 'networkId';
-        input['withDetails'] = false;
+        input['withDetails'] = true;
 
     controller.getNetworkSmTargetGroups(input, function(error, response, context) {
 
@@ -3979,7 +3979,7 @@ function getNetworkSmTargetGroup(input, callback)
     var input = [];
         input['networkId'] = 'networkId';
         input['targetGroupId'] = 'targetGroupId';
-        input['withDetails'] = false;
+        input['withDetails'] = true;
 
     controller.getNetworkSmTargetGroup(input, function(error, response, context) {
 
@@ -4292,7 +4292,7 @@ function getNetworkAirMarshal(input, callback)
     var input = [];
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
-        input['timespan'] = 10;
+        input['timespan'] = 203;
 
     controller.getNetworkAirMarshal(input, function(error, response, context) {
 
@@ -5104,7 +5104,7 @@ function getOrganizationUplinksLossAndLatency(input, callback)
         input['organizationId'] = 'organizationId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 10;
+        input['timespan'] = 203;
         input['uplink'] = 'uplink';
         input['ip'] = 'ip';
 
@@ -5532,7 +5532,7 @@ function getNetworkWirelessRfProfiles(input, callback)
 
     var input = [];
         input['networkId'] = 'networkId';
-        input['includeTemplateProfiles'] = false;
+        input['includeTemplateProfiles'] = true;
 
     controller.getNetworkWirelessRfProfiles(input, function(error, response, context) {
 
@@ -7570,8 +7570,8 @@ function getNetworkClientSecurityEvents(input, callback)
         input['clientId'] = 'clientId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 101;
-        input['perPage'] = 101;
+        input['timespan'] = 161;
+        input['perPage'] = 161;
         input['startingAfter'] = 'startingAfter';
         input['endingBefore'] = 'endingBefore';
 
@@ -7613,8 +7613,8 @@ function getNetworkSecurityEvents(input, callback)
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 101;
-        input['perPage'] = 101;
+        input['timespan'] = 161;
+        input['perPage'] = 161;
         input['startingAfter'] = 'startingAfter';
         input['endingBefore'] = 'endingBefore';
 
@@ -7656,8 +7656,8 @@ function getOrganizationSecurityEvents(input, callback)
         input['organizationId'] = 'organizationId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 101;
-        input['perPage'] = 101;
+        input['timespan'] = 161;
+        input['perPage'] = 161;
         input['startingAfter'] = 'startingAfter';
         input['endingBefore'] = 'endingBefore';
 
@@ -7708,7 +7708,7 @@ function getNetworkSplashLoginAttempts(input, callback)
         input['networkId'] = 'networkId';
         input['ssidNumber'] = Object.keys(ssidNumber)[0];
         input['loginIdentifier'] = 'loginIdentifier';
-        input['timespan'] = 101;
+        input['timespan'] = 161;
 
     controller.getNetworkSplashLoginAttempts(input, function(error, response, context) {
 
@@ -9268,8 +9268,8 @@ function getOrganizationWebhookLogs(input, callback)
         input['organizationId'] = 'organizationId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 101;
-        input['perPage'] = 101;
+        input['timespan'] = 161;
+        input['perPage'] = 161;
         input['startingAfter'] = 'startingAfter';
         input['endingBefore'] = 'endingBefore';
         input['url'] = 'url';
@@ -9324,9 +9324,9 @@ function getNetworkClientsConnectionStats(input, callback)
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 101;
-        input['ssid'] = 101;
-        input['vlan'] = 101;
+        input['timespan'] = 161;
+        input['ssid'] = 161;
+        input['vlan'] = 161;
         input['apTag'] = 'apTag';
 
     controller.getNetworkClientsConnectionStats(input, function(error, response, context) {
@@ -9368,9 +9368,9 @@ function getNetworkClientsLatencyStats(input, callback)
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 101;
-        input['ssid'] = 101;
-        input['vlan'] = 101;
+        input['timespan'] = 161;
+        input['ssid'] = 161;
+        input['vlan'] = 161;
         input['apTag'] = 'apTag';
         input['fields'] = 'fields';
 
@@ -9414,9 +9414,9 @@ function getNetworkClientConnectionStats(input, callback)
         input['clientId'] = 'clientId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 101;
-        input['ssid'] = 101;
-        input['vlan'] = 101;
+        input['timespan'] = 161;
+        input['ssid'] = 161;
+        input['vlan'] = 161;
         input['apTag'] = 'apTag';
 
     controller.getNetworkClientConnectionStats(input, function(error, response, context) {
@@ -9460,9 +9460,9 @@ function getNetworkClientLatencyStats(input, callback)
         input['clientId'] = 'clientId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 101;
-        input['ssid'] = 101;
-        input['vlan'] = 101;
+        input['timespan'] = 161;
+        input['ssid'] = 161;
+        input['vlan'] = 161;
         input['apTag'] = 'apTag';
         input['fields'] = 'fields';
 
@@ -9504,9 +9504,9 @@ function getNetworkConnectionStats(input, callback)
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 101;
-        input['ssid'] = 101;
-        input['vlan'] = 101;
+        input['timespan'] = 161;
+        input['ssid'] = 161;
+        input['vlan'] = 161;
         input['apTag'] = 'apTag';
 
     controller.getNetworkConnectionStats(input, function(error, response, context) {
@@ -9547,9 +9547,9 @@ function getNetworkDevicesConnectionStats(input, callback)
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 101;
-        input['ssid'] = 101;
-        input['vlan'] = 101;
+        input['timespan'] = 161;
+        input['ssid'] = 161;
+        input['vlan'] = 161;
         input['apTag'] = 'apTag';
 
     controller.getNetworkDevicesConnectionStats(input, function(error, response, context) {
@@ -9591,9 +9591,9 @@ function getNetworkDevicesLatencyStats(input, callback)
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 101;
-        input['ssid'] = 101;
-        input['vlan'] = 101;
+        input['timespan'] = 161;
+        input['ssid'] = 161;
+        input['vlan'] = 161;
         input['apTag'] = 'apTag';
         input['fields'] = 'fields';
 
@@ -9637,9 +9637,9 @@ function getNetworkDeviceConnectionStats(input, callback)
         input['serial'] = 'serial';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 101;
-        input['ssid'] = 101;
-        input['vlan'] = 101;
+        input['timespan'] = 161;
+        input['ssid'] = 161;
+        input['vlan'] = 161;
         input['apTag'] = 'apTag';
 
     controller.getNetworkDeviceConnectionStats(input, function(error, response, context) {
@@ -9683,9 +9683,9 @@ function getNetworkDeviceLatencyStats(input, callback)
         input['serial'] = 'serial';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 101;
-        input['ssid'] = 101;
-        input['vlan'] = 101;
+        input['timespan'] = 161;
+        input['ssid'] = 161;
+        input['vlan'] = 161;
         input['apTag'] = 'apTag';
         input['fields'] = 'fields';
 
@@ -9729,9 +9729,9 @@ function getNetworkFailedConnections(input, callback)
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 101;
-        input['ssid'] = 101;
-        input['vlan'] = 101;
+        input['timespan'] = 161;
+        input['ssid'] = 161;
+        input['vlan'] = 161;
         input['apTag'] = 'apTag';
         input['serial'] = 'serial';
         input['clientId'] = 'clientId';
@@ -9775,9 +9775,9 @@ function getNetworkLatencyStats(input, callback)
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 101;
-        input['ssid'] = 101;
-        input['vlan'] = 101;
+        input['timespan'] = 161;
+        input['ssid'] = 161;
+        input['vlan'] = 161;
         input['apTag'] = 'apTag';
         input['fields'] = 'fields';
 
