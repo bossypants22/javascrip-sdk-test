@@ -195,6 +195,7 @@ lib.Configuration.xCiscoMerakiAPIKey = "xCiscoMerakiAPIKey";
 * [ConfigTemplatesController](#config_templates_controller)
 * [ContentFilteringCategoriesController](#content_filtering_categories_controller)
 * [ContentFilteringRulesController](#content_filtering_rules_controller)
+* [DashboardBrandingPoliciesController](#dashboard_branding_policies_controller)
 * [DevicesController](#devices_controller)
 * [FirewalledServicesController](#firewalled_services_controller)
 * [GroupPoliciesController](#group_policies_controller)
@@ -287,14 +288,14 @@ function getOrganizationApiRequests(input, callback)
         input['organizationId'] = 'organizationId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 189;
-        input['perPage'] = 189;
+        input['timespan'] = 224.193972637502;
+        input['perPage'] = 224;
         input['startingAfter'] = 'startingAfter';
         input['endingBefore'] = 'endingBefore';
         input['adminId'] = 'adminId';
         input['path'] = 'path';
         input['method'] = 'method';
-        input['responseCode'] = 189;
+        input['responseCode'] = 224;
 
     controller.getOrganizationApiRequests(input, function(error, response, context) {
 
@@ -739,8 +740,8 @@ function getNetworkBluetoothClients(input, callback)
     var input = [];
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
-        input['timespan'] = 189;
-        input['perPage'] = 189;
+        input['timespan'] = 224.193972637502;
+        input['perPage'] = 224;
         input['startingAfter'] = 'startingAfter';
         input['endingBefore'] = 'endingBefore';
         input['includeConnectivityHistory'] = true;
@@ -780,7 +781,7 @@ function getNetworkBluetoothClient(input, callback)
         input['networkId'] = 'networkId';
         input['bluetoothClientId'] = 'bluetoothClientId';
         input['includeConnectivityHistory'] = true;
-        input['connectivityHistoryTimespan'] = 189;
+        input['connectivityHistoryTimespan'] = 224;
 
     controller.getNetworkBluetoothClient(input, function(error, response, context) {
 
@@ -909,7 +910,7 @@ function getDeviceClients(input, callback)
     var input = [];
         input['serial'] = 'serial';
         input['t0'] = 't0';
-        input['timespan'] = 189;
+        input['timespan'] = 224.193972637502;
 
     controller.getDeviceClients(input, function(error, response, context) {
 
@@ -947,8 +948,8 @@ function getNetworkClients(input, callback)
     var input = [];
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
-        input['timespan'] = 189;
-        input['perPage'] = 189;
+        input['timespan'] = 224.193972637502;
+        input['perPage'] = 224;
         input['startingAfter'] = 'startingAfter';
         input['endingBefore'] = 'endingBefore';
 
@@ -1053,7 +1054,7 @@ function getNetworkClientEvents(input, callback)
     var input = [];
         input['networkId'] = 'networkId';
         input['clientId'] = 'clientId';
-        input['perPage'] = 189;
+        input['perPage'] = 224;
         input['startingAfter'] = 'startingAfter';
         input['endingBefore'] = 'endingBefore';
 
@@ -1095,8 +1096,8 @@ function getNetworkClientLatencyHistory(input, callback)
         input['clientId'] = 'clientId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 189;
-        input['resolution'] = 189;
+        input['timespan'] = 224.193972637502;
+        input['resolution'] = 224;
 
     controller.getNetworkClientLatencyHistory(input, function(error, response, context) {
 
@@ -1269,7 +1270,7 @@ function getNetworkClientTrafficHistory(input, callback)
     var input = [];
         input['networkId'] = 'networkId';
         input['clientId'] = 'clientId';
-        input['perPage'] = 189;
+        input['perPage'] = 224;
         input['startingAfter'] = 'startingAfter';
         input['endingBefore'] = 'endingBefore';
 
@@ -1508,6 +1509,245 @@ function updateNetworkContentFiltering(input, callback)
 
 [Back to List of Controllers](#list_of_controllers)
 
+## <a name="dashboard_branding_policies_controller"></a>![Class: ](https://apidocs.io/img/class.png ".DashboardBrandingPoliciesController") DashboardBrandingPoliciesController
+
+### Get singleton instance
+
+The singleton instance of the ``` DashboardBrandingPoliciesController ``` class can be accessed from the API Client.
+
+```javascript
+var controller = lib.DashboardBrandingPoliciesController;
+```
+
+### <a name="get_organization_branding_policies"></a>![Method: ](https://apidocs.io/img/method.png ".DashboardBrandingPoliciesController.getOrganizationBrandingPolicies") getOrganizationBrandingPolicies
+
+> List the branding policies of an organization
+
+
+```javascript
+function getOrganizationBrandingPolicies(organizationId, callback)
+```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| organizationId |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```javascript
+
+    var organizationId = 'organizationId';
+
+    controller.getOrganizationBrandingPolicies(organizationId, function(error, response, context) {
+
+    
+    });
+```
+
+
+
+### <a name="create_organization_branding_policy"></a>![Method: ](https://apidocs.io/img/method.png ".DashboardBrandingPoliciesController.createOrganizationBrandingPolicy") createOrganizationBrandingPolicy
+
+> Add a new branding policy to an organization
+
+
+```javascript
+function createOrganizationBrandingPolicy(input, callback)
+```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| organizationId |  ``` Required ```  | TODO: Add a parameter description |
+| createOrganizationBrandingPolicy |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```javascript
+
+    var input = [];
+        input['organizationId'] = 'organizationId';
+        input['createOrganizationBrandingPolicy'] = new CreateOrganizationBrandingPolicyModel({"key":"value"});
+
+    controller.createOrganizationBrandingPolicy(input, function(error, response, context) {
+
+    
+    });
+```
+
+
+
+### <a name="get_organization_branding_policies_priorities"></a>![Method: ](https://apidocs.io/img/method.png ".DashboardBrandingPoliciesController.getOrganizationBrandingPoliciesPriorities") getOrganizationBrandingPoliciesPriorities
+
+> Return the branding policy IDs of an organization in priority order. IDs are ordered in ascending order of priority (IDs later in the array have higher priority).
+
+
+```javascript
+function getOrganizationBrandingPoliciesPriorities(organizationId, callback)
+```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| organizationId |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```javascript
+
+    var organizationId = 'organizationId';
+
+    controller.getOrganizationBrandingPoliciesPriorities(organizationId, function(error, response, context) {
+
+    
+    });
+```
+
+
+
+### <a name="update_organization_branding_policies_priorities"></a>![Method: ](https://apidocs.io/img/method.png ".DashboardBrandingPoliciesController.updateOrganizationBrandingPoliciesPriorities") updateOrganizationBrandingPoliciesPriorities
+
+> Update the priority ordering of an organization's branding policies.
+
+
+```javascript
+function updateOrganizationBrandingPoliciesPriorities(input, callback)
+```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| organizationId |  ``` Required ```  | TODO: Add a parameter description |
+| updateOrganizationBrandingPoliciesPriorities |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```javascript
+
+    var input = [];
+        input['organizationId'] = 'organizationId';
+        input['updateOrganizationBrandingPoliciesPriorities'] = new UpdateOrganizationBrandingPoliciesPrioritiesModel({"key":"value"});
+
+    controller.updateOrganizationBrandingPoliciesPriorities(input, function(error, response, context) {
+
+    
+    });
+```
+
+
+
+### <a name="get_organization_branding_policy"></a>![Method: ](https://apidocs.io/img/method.png ".DashboardBrandingPoliciesController.getOrganizationBrandingPolicy") getOrganizationBrandingPolicy
+
+> Return a branding policy
+
+
+```javascript
+function getOrganizationBrandingPolicy(input, callback)
+```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| organizationId |  ``` Required ```  | TODO: Add a parameter description |
+| brandingPolicyId |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```javascript
+
+    var input = [];
+        input['organizationId'] = 'organizationId';
+        input['brandingPolicyId'] = 'brandingPolicyId';
+
+    controller.getOrganizationBrandingPolicy(input, function(error, response, context) {
+
+    
+    });
+```
+
+
+
+### <a name="update_organization_branding_policy"></a>![Method: ](https://apidocs.io/img/method.png ".DashboardBrandingPoliciesController.updateOrganizationBrandingPolicy") updateOrganizationBrandingPolicy
+
+> Update a branding policy
+
+
+```javascript
+function updateOrganizationBrandingPolicy(input, callback)
+```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| organizationId |  ``` Required ```  | TODO: Add a parameter description |
+| brandingPolicyId |  ``` Required ```  | TODO: Add a parameter description |
+| updateOrganizationBrandingPolicy |  ``` Optional ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```javascript
+
+    var input = [];
+        input['organizationId'] = 'organizationId';
+        input['brandingPolicyId'] = 'brandingPolicyId';
+        input['updateOrganizationBrandingPolicy'] = new UpdateOrganizationBrandingPolicyModel({"key":"value"});
+
+    controller.updateOrganizationBrandingPolicy(input, function(error, response, context) {
+
+    
+    });
+```
+
+
+
+### <a name="delete_organization_branding_policy"></a>![Method: ](https://apidocs.io/img/method.png ".DashboardBrandingPoliciesController.deleteOrganizationBrandingPolicy") deleteOrganizationBrandingPolicy
+
+> Delete a branding policy
+
+
+```javascript
+function deleteOrganizationBrandingPolicy(input, callback)
+```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| organizationId |  ``` Required ```  | TODO: Add a parameter description |
+| brandingPolicyId |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```javascript
+
+    var input = [];
+        input['organizationId'] = 'organizationId';
+        input['brandingPolicyId'] = 'brandingPolicyId';
+
+    controller.deleteOrganizationBrandingPolicy(input, function(error, response, context) {
+
+    
+    });
+```
+
+
+
+[Back to List of Controllers](#list_of_controllers)
+
 ## <a name="devices_controller"></a>![Class: ](https://apidocs.io/img/class.png ".DevicesController") DevicesController
 
 ### Get singleton instance
@@ -1709,7 +1949,7 @@ function getNetworkDeviceLldpCdp(input, callback)
     var input = [];
         input['networkId'] = 'networkId';
         input['serial'] = 'serial';
-        input['timespan'] = 189;
+        input['timespan'] = 224;
 
     controller.getNetworkDeviceLldpCdp(input, function(error, response, context) {
 
@@ -1752,8 +1992,8 @@ function getNetworkDeviceLossAndLatencyHistory(input, callback)
         input['ip'] = 'ip';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 189;
-        input['resolution'] = 189;
+        input['timespan'] = 224.193972637502;
+        input['resolution'] = 224;
         input['uplink'] = Object.keys(uplink)[0];
 
     controller.getNetworkDeviceLossAndLatencyHistory(input, function(error, response, context) {
@@ -1921,7 +2161,7 @@ function getOrganizationDevices(input, callback)
 
     var input = [];
         input['organizationId'] = 'organizationId';
-        input['perPage'] = 189;
+        input['perPage'] = 224;
         input['startingAfter'] = 'startingAfter';
         input['endingBefore'] = 'endingBefore';
 
@@ -2749,7 +2989,7 @@ function getDeviceCameraAnalyticsOverview(input, callback)
         input['serial'] = 'serial';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 189;
+        input['timespan'] = 60.6892545291638;
         input['objectType'] = Object.keys(objectType)[0];
 
     controller.getDeviceCameraAnalyticsOverview(input, function(error, response, context) {
@@ -2854,8 +3094,8 @@ function getDeviceCameraAnalyticsZoneHistory(input, callback)
         input['zoneId'] = 'zoneId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 189;
-        input['resolution'] = 189;
+        input['timespan'] = 60.6892545291638;
+        input['resolution'] = 60;
         input['objectType'] = Object.keys(objectType)[0];
 
     controller.getDeviceCameraAnalyticsZoneHistory(input, function(error, response, context) {
@@ -3913,7 +4153,7 @@ function getNetworkSmTargetGroups(input, callback)
 
     var input = [];
         input['networkId'] = 'networkId';
-        input['withDetails'] = true;
+        input['withDetails'] = false;
 
     controller.getNetworkSmTargetGroups(input, function(error, response, context) {
 
@@ -3981,7 +4221,7 @@ function getNetworkSmTargetGroup(input, callback)
     var input = [];
         input['networkId'] = 'networkId';
         input['targetGroupId'] = 'targetGroupId';
-        input['withDetails'] = true;
+        input['withDetails'] = false;
 
     controller.getNetworkSmTargetGroup(input, function(error, response, context) {
 
@@ -4294,7 +4534,7 @@ function getNetworkAirMarshal(input, callback)
     var input = [];
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
-        input['timespan'] = 26;
+        input['timespan'] = 60.6892545291638;
 
     controller.getNetworkAirMarshal(input, function(error, response, context) {
 
@@ -4443,7 +4683,7 @@ function updateNetworkSiteToSiteVpn(input, callback)
 | Parameter | Tags | Description |
 |-----------|------|-------------|
 | networkId |  ``` Required ```  | TODO: Add a parameter description |
-| updateNetworkSiteToSiteVpn |  ``` Optional ```  | TODO: Add a parameter description |
+| updateNetworkSiteToSiteVpn |  ``` Required ```  | TODO: Add a parameter description |
 
 
 
@@ -4495,8 +4735,8 @@ function splitNetwork(networkId, callback)
 
 ### <a name="get_network_traffic"></a>![Method: ](https://apidocs.io/img/method.png ".NetworksController.getNetworkTraffic") getNetworkTraffic
 
-> The traffic analysis data for this network.
-> <a href="https://documentation.meraki.com/MR/Monitoring_and_Reporting/Hostname_Visibility">Traffic Analysis with Hostname Visibility</a> must be enabled on the network.
+>     The traffic analysis data for this network.
+>     <a href="https://documentation.meraki.com/MR/Monitoring_and_Reporting/Hostname_Visibility">Traffic Analysis with Hostname Visibility</a> must be enabled on the network.
 > 
 
 
@@ -4508,8 +4748,10 @@ function getNetworkTraffic(input, callback)
 | Parameter | Tags | Description |
 |-----------|------|-------------|
 | networkId |  ``` Required ```  | TODO: Add a parameter description |
-| timespan |  ``` Required ```  | The timespan for the data. Must be an integer representing a duration in seconds between two hours and one month. (Mandatory.) |
-| deviceType |  ``` Optional ```  | Filter the data by device type: combined (default), wireless, switch, appliance. When using combined, for each rule the data will come from the device type with the most usage. |
+| t0 |  ``` Optional ```  | The beginning of the timespan for the data. The maximum lookback period is 30 days from today. |
+| timespan |  ``` Optional ```  | The timespan for which the information will be fetched. If specifying timespan, do not specify parameter t0. The value must be in seconds and be less than or equal to 30 days. |
+| deviceType |  ``` Optional ```  | Filter the data by device type: combined (default), wireless, switch, appliance.
+    When using combined, for each rule the data will come from the device type with the most usage. |
 
 
 
@@ -4519,7 +4761,8 @@ function getNetworkTraffic(input, callback)
 
     var input = [];
         input['networkId'] = 'networkId';
-        input['timespan'] = 'timespan';
+        input['t0'] = 't0';
+        input['timespan'] = 60.6892545291638;
         input['deviceType'] = 'deviceType';
 
     controller.getNetworkTraffic(input, function(error, response, context) {
@@ -5106,7 +5349,7 @@ function getOrganizationUplinksLossAndLatency(input, callback)
         input['organizationId'] = 'organizationId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 26;
+        input['timespan'] = 60.6892545291638;
         input['uplink'] = Object.keys(uplink)[0];
         input['ip'] = 'ip';
 
@@ -7572,8 +7815,8 @@ function getNetworkClientSecurityEvents(input, callback)
         input['clientId'] = 'clientId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 26;
-        input['perPage'] = 26;
+        input['timespan'] = 60.6892545291638;
+        input['perPage'] = 60;
         input['startingAfter'] = 'startingAfter';
         input['endingBefore'] = 'endingBefore';
 
@@ -7615,8 +7858,8 @@ function getNetworkSecurityEvents(input, callback)
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 26;
-        input['perPage'] = 26;
+        input['timespan'] = 60.6892545291638;
+        input['perPage'] = 60;
         input['startingAfter'] = 'startingAfter';
         input['endingBefore'] = 'endingBefore';
 
@@ -7658,8 +7901,8 @@ function getOrganizationSecurityEvents(input, callback)
         input['organizationId'] = 'organizationId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 26;
-        input['perPage'] = 26;
+        input['timespan'] = 60.6892545291638;
+        input['perPage'] = 60;
         input['startingAfter'] = 'startingAfter';
         input['endingBefore'] = 'endingBefore';
 
@@ -7710,7 +7953,7 @@ function getNetworkSplashLoginAttempts(input, callback)
         input['networkId'] = 'networkId';
         input['ssidNumber'] = Object.keys(ssidNumber)[0];
         input['loginIdentifier'] = 'loginIdentifier';
-        input['timespan'] = 26;
+        input['timespan'] = 60;
 
     controller.getNetworkSplashLoginAttempts(input, function(error, response, context) {
 
@@ -8349,6 +8592,233 @@ function updateNetworkSwitchSettings(input, callback)
 
 
 
+### <a name="get_network_switch_settings_qos_rules"></a>![Method: ](https://apidocs.io/img/method.png ".SwitchSettingsController.getNetworkSwitchSettingsQosRules") getNetworkSwitchSettingsQosRules
+
+> List quality of service rules
+
+
+```javascript
+function getNetworkSwitchSettingsQosRules(networkId, callback)
+```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| networkId |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```javascript
+
+    var networkId = 'networkId';
+
+    controller.getNetworkSwitchSettingsQosRules(networkId, function(error, response, context) {
+
+    
+    });
+```
+
+
+
+### <a name="create_network_switch_settings_qos_rule"></a>![Method: ](https://apidocs.io/img/method.png ".SwitchSettingsController.createNetworkSwitchSettingsQosRule") createNetworkSwitchSettingsQosRule
+
+> Add a quality of service rule
+
+
+```javascript
+function createNetworkSwitchSettingsQosRule(input, callback)
+```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| networkId |  ``` Required ```  | TODO: Add a parameter description |
+| createNetworkSwitchSettingsQosRule |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```javascript
+
+    var input = [];
+        input['networkId'] = 'networkId';
+        input['createNetworkSwitchSettingsQosRule'] = new CreateNetworkSwitchSettingsQosRuleModel({"key":"value"});
+
+    controller.createNetworkSwitchSettingsQosRule(input, function(error, response, context) {
+
+    
+    });
+```
+
+
+
+### <a name="get_network_switch_settings_qos_rules_order"></a>![Method: ](https://apidocs.io/img/method.png ".SwitchSettingsController.getNetworkSwitchSettingsQosRulesOrder") getNetworkSwitchSettingsQosRulesOrder
+
+> Return the quality of service rule IDs by order in which they will be processed by the switch
+
+
+```javascript
+function getNetworkSwitchSettingsQosRulesOrder(networkId, callback)
+```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| networkId |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```javascript
+
+    var networkId = 'networkId';
+
+    controller.getNetworkSwitchSettingsQosRulesOrder(networkId, function(error, response, context) {
+
+    
+    });
+```
+
+
+
+### <a name="update_network_switch_settings_qos_rules_order"></a>![Method: ](https://apidocs.io/img/method.png ".SwitchSettingsController.updateNetworkSwitchSettingsQosRulesOrder") updateNetworkSwitchSettingsQosRulesOrder
+
+> Update the order in which the rules should be processed by the switch
+
+
+```javascript
+function updateNetworkSwitchSettingsQosRulesOrder(input, callback)
+```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| networkId |  ``` Required ```  | TODO: Add a parameter description |
+| updateNetworkSwitchSettingsQosRulesOrder |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```javascript
+
+    var input = [];
+        input['networkId'] = 'networkId';
+        input['updateNetworkSwitchSettingsQosRulesOrder'] = new UpdateNetworkSwitchSettingsQosRulesOrderModel({"key":"value"});
+
+    controller.updateNetworkSwitchSettingsQosRulesOrder(input, function(error, response, context) {
+
+    
+    });
+```
+
+
+
+### <a name="get_network_switch_settings_qos_rule"></a>![Method: ](https://apidocs.io/img/method.png ".SwitchSettingsController.getNetworkSwitchSettingsQosRule") getNetworkSwitchSettingsQosRule
+
+> Return a quality of service rule
+
+
+```javascript
+function getNetworkSwitchSettingsQosRule(input, callback)
+```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| networkId |  ``` Required ```  | TODO: Add a parameter description |
+| qosRuleId |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```javascript
+
+    var input = [];
+        input['networkId'] = 'networkId';
+        input['qosRuleId'] = 'qosRuleId';
+
+    controller.getNetworkSwitchSettingsQosRule(input, function(error, response, context) {
+
+    
+    });
+```
+
+
+
+### <a name="delete_network_switch_settings_qos_rule"></a>![Method: ](https://apidocs.io/img/method.png ".SwitchSettingsController.deleteNetworkSwitchSettingsQosRule") deleteNetworkSwitchSettingsQosRule
+
+> Delete a quality of service rule
+
+
+```javascript
+function deleteNetworkSwitchSettingsQosRule(input, callback)
+```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| networkId |  ``` Required ```  | TODO: Add a parameter description |
+| qosRuleId |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```javascript
+
+    var input = [];
+        input['networkId'] = 'networkId';
+        input['qosRuleId'] = 'qosRuleId';
+
+    controller.deleteNetworkSwitchSettingsQosRule(input, function(error, response, context) {
+
+    
+    });
+```
+
+
+
+### <a name="update_network_switch_settings_qos_rule"></a>![Method: ](https://apidocs.io/img/method.png ".SwitchSettingsController.updateNetworkSwitchSettingsQosRule") updateNetworkSwitchSettingsQosRule
+
+> Update a quality of service rule
+
+
+```javascript
+function updateNetworkSwitchSettingsQosRule(input, callback)
+```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| networkId |  ``` Required ```  | TODO: Add a parameter description |
+| qosRuleId |  ``` Required ```  | TODO: Add a parameter description |
+| updateNetworkSwitchSettingsQosRule |  ``` Optional ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```javascript
+
+    var input = [];
+        input['networkId'] = 'networkId';
+        input['qosRuleId'] = 'qosRuleId';
+        input['updateNetworkSwitchSettingsQosRule'] = new UpdateNetworkSwitchSettingsQosRuleModel({"key":"value"});
+
+    controller.updateNetworkSwitchSettingsQosRule(input, function(error, response, context) {
+
+    
+    });
+```
+
+
+
 [Back to List of Controllers](#list_of_controllers)
 
 ## <a name="switch_stacks_controller"></a>![Class: ](https://apidocs.io/img/class.png ".SwitchStacksController") SwitchStacksController
@@ -8360,41 +8830,6 @@ The singleton instance of the ``` SwitchStacksController ``` class can be access
 ```javascript
 var controller = lib.SwitchStacksController;
 ```
-
-### <a name="remove_network_switch_stack"></a>![Method: ](https://apidocs.io/img/method.png ".SwitchStacksController.removeNetworkSwitchStack") removeNetworkSwitchStack
-
-> Remove a switch from a stack
-
-
-```javascript
-function removeNetworkSwitchStack(input, callback)
-```
-#### Parameters
-
-| Parameter | Tags | Description |
-|-----------|------|-------------|
-| networkID |  ``` Required ```  | TODO: Add a parameter description |
-| switchStackId |  ``` Required ```  | TODO: Add a parameter description |
-| removeNetworkSwitchStack |  ``` Required ```  | TODO: Add a parameter description |
-
-
-
-#### Example Usage
-
-```javascript
-
-    var input = [];
-        input['networkID'] = 'networkID';
-        input['switchStackId'] = 'switchStackId';
-        input['removeNetworkSwitchStack'] = new RemoveNetworkSwitchStackModel({"key":"value"});
-
-    controller.removeNetworkSwitchStack(input, function(error, response, context) {
-
-    
-    });
-```
-
-
 
 ### <a name="get_network_switch_stacks"></a>![Method: ](https://apidocs.io/img/method.png ".SwitchStacksController.getNetworkSwitchStacks") getNetworkSwitchStacks
 
@@ -8553,6 +8988,41 @@ function addNetworkSwitchStack(input, callback)
         input['addNetworkSwitchStack'] = new AddNetworkSwitchStackModel({"key":"value"});
 
     controller.addNetworkSwitchStack(input, function(error, response, context) {
+
+    
+    });
+```
+
+
+
+### <a name="remove_network_switch_stack"></a>![Method: ](https://apidocs.io/img/method.png ".SwitchStacksController.removeNetworkSwitchStack") removeNetworkSwitchStack
+
+> Remove a switch from a stack
+
+
+```javascript
+function removeNetworkSwitchStack(input, callback)
+```
+#### Parameters
+
+| Parameter | Tags | Description |
+|-----------|------|-------------|
+| networkId |  ``` Required ```  | TODO: Add a parameter description |
+| switchStackId |  ``` Required ```  | TODO: Add a parameter description |
+| removeNetworkSwitchStack |  ``` Required ```  | TODO: Add a parameter description |
+
+
+
+#### Example Usage
+
+```javascript
+
+    var input = [];
+        input['networkId'] = 'networkId';
+        input['switchStackId'] = 'switchStackId';
+        input['removeNetworkSwitchStack'] = new RemoveNetworkSwitchStackModel({"key":"value"});
+
+    controller.removeNetworkSwitchStack(input, function(error, response, context) {
 
     
     });
@@ -9270,8 +9740,8 @@ function getOrganizationWebhookLogs(input, callback)
         input['organizationId'] = 'organizationId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 26;
-        input['perPage'] = 26;
+        input['timespan'] = 18.9660813025972;
+        input['perPage'] = 18;
         input['startingAfter'] = 'startingAfter';
         input['endingBefore'] = 'endingBefore';
         input['url'] = 'url';
@@ -9326,9 +9796,9 @@ function getNetworkClientsConnectionStats(input, callback)
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 26;
-        input['ssid'] = 26;
-        input['vlan'] = 26;
+        input['timespan'] = 18.9660813025972;
+        input['ssid'] = 18;
+        input['vlan'] = 18;
         input['apTag'] = 'apTag';
 
     controller.getNetworkClientsConnectionStats(input, function(error, response, context) {
@@ -9370,9 +9840,9 @@ function getNetworkClientsLatencyStats(input, callback)
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 26;
-        input['ssid'] = 26;
-        input['vlan'] = 26;
+        input['timespan'] = 18.9660813025972;
+        input['ssid'] = 18;
+        input['vlan'] = 18;
         input['apTag'] = 'apTag';
         input['fields'] = 'fields';
 
@@ -9416,9 +9886,9 @@ function getNetworkClientConnectionStats(input, callback)
         input['clientId'] = 'clientId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 26;
-        input['ssid'] = 26;
-        input['vlan'] = 26;
+        input['timespan'] = 18.9660813025972;
+        input['ssid'] = 18;
+        input['vlan'] = 18;
         input['apTag'] = 'apTag';
 
     controller.getNetworkClientConnectionStats(input, function(error, response, context) {
@@ -9462,9 +9932,9 @@ function getNetworkClientLatencyStats(input, callback)
         input['clientId'] = 'clientId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 26;
-        input['ssid'] = 26;
-        input['vlan'] = 26;
+        input['timespan'] = 18.9660813025972;
+        input['ssid'] = 18;
+        input['vlan'] = 18;
         input['apTag'] = 'apTag';
         input['fields'] = 'fields';
 
@@ -9506,9 +9976,9 @@ function getNetworkConnectionStats(input, callback)
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 26;
-        input['ssid'] = 26;
-        input['vlan'] = 26;
+        input['timespan'] = 18.9660813025972;
+        input['ssid'] = 18;
+        input['vlan'] = 18;
         input['apTag'] = 'apTag';
 
     controller.getNetworkConnectionStats(input, function(error, response, context) {
@@ -9549,9 +10019,9 @@ function getNetworkDevicesConnectionStats(input, callback)
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 239;
-        input['ssid'] = 239;
-        input['vlan'] = 239;
+        input['timespan'] = 18.9660813025972;
+        input['ssid'] = 18;
+        input['vlan'] = 18;
         input['apTag'] = 'apTag';
 
     controller.getNetworkDevicesConnectionStats(input, function(error, response, context) {
@@ -9593,9 +10063,9 @@ function getNetworkDevicesLatencyStats(input, callback)
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 239;
-        input['ssid'] = 239;
-        input['vlan'] = 239;
+        input['timespan'] = 18.9660813025972;
+        input['ssid'] = 18;
+        input['vlan'] = 18;
         input['apTag'] = 'apTag';
         input['fields'] = 'fields';
 
@@ -9639,9 +10109,9 @@ function getNetworkDeviceConnectionStats(input, callback)
         input['serial'] = 'serial';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 239;
-        input['ssid'] = 239;
-        input['vlan'] = 239;
+        input['timespan'] = 18.9660813025972;
+        input['ssid'] = 18;
+        input['vlan'] = 18;
         input['apTag'] = 'apTag';
 
     controller.getNetworkDeviceConnectionStats(input, function(error, response, context) {
@@ -9685,9 +10155,9 @@ function getNetworkDeviceLatencyStats(input, callback)
         input['serial'] = 'serial';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 239;
-        input['ssid'] = 239;
-        input['vlan'] = 239;
+        input['timespan'] = 18.9660813025972;
+        input['ssid'] = 18;
+        input['vlan'] = 18;
         input['apTag'] = 'apTag';
         input['fields'] = 'fields';
 
@@ -9731,9 +10201,9 @@ function getNetworkFailedConnections(input, callback)
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 239;
-        input['ssid'] = 239;
-        input['vlan'] = 239;
+        input['timespan'] = 18.9660813025972;
+        input['ssid'] = 18;
+        input['vlan'] = 18;
         input['apTag'] = 'apTag';
         input['serial'] = 'serial';
         input['clientId'] = 'clientId';
@@ -9777,9 +10247,9 @@ function getNetworkLatencyStats(input, callback)
         input['networkId'] = 'networkId';
         input['t0'] = 't0';
         input['t1'] = 't1';
-        input['timespan'] = 239;
-        input['ssid'] = 239;
-        input['vlan'] = 239;
+        input['timespan'] = 18.9660813025972;
+        input['ssid'] = 18;
+        input['vlan'] = 18;
         input['apTag'] = 'apTag';
         input['fields'] = 'fields';
 
